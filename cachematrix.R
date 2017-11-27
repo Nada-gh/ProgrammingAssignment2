@@ -1,7 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## function makeCacheMatrix creates a square matrix. set the value of the matrix,and then get the matrix back.
+## The use of "<<-" operator to assign a value to an object defined in another environment. 
 
-## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -19,7 +18,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this functionget
+## function cacheSolve checks first if the inverse of the matrix X is already cached. If so, returns it. Otherwise, the inverse
+## is calculated using the "solve" function.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
